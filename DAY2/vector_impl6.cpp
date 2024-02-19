@@ -46,11 +46,9 @@ public:
 int main()
 {
 	vector v(4, 0); 
-
-	v.at(0) = 10;
+	
+	v.at(0) = 10; // v.ptr[0] = 10
 	v.at(1) = 20;
 
 	int n2 = v.at(1);
-
-
 }
