@@ -47,6 +47,6 @@ int main()
 	std::cout << "할당한 메모리 크기 : " << size << std::endl; 
 
 	// 동적 할당한 메모리는 반드시 사용후에는 직접 제거해야 합니다.
-	delete[] score;
-	
+	delete[] score;	
 }
+// 9 개쯤 입력후 -1 넣어 보세요
