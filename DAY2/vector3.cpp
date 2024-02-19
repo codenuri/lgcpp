@@ -17,7 +17,7 @@ int main()
 	// => 동적 메모리 할당을 해야 한다. 
 	// => C : malloc,  C++ : new
 
-//	int* score = (int*)malloc(sizeof(cnt));
+//	int* score = (int*)malloc(sizeof(int)*cnt);
 //	free(score);
 
 	int* score = new int[cnt]; // 여기서는 변수도 사용가능
