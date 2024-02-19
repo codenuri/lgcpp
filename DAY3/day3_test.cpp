@@ -14,9 +14,9 @@ public:
 		name = n;
     
 		if ( a >= 0 && a <= 150) // 이부분은 그냥 age = a 로 해도 정답 처리하겠습니다.
-      age = a;
-    else 
-      age = 0;
+      			age = a;
+    		else 
+      			age = 0;
 	}
 	void set_name(const std::string& n) 
 	{
