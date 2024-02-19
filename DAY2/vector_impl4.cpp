@@ -43,8 +43,6 @@ public:
 int main()
 {
 	vector v(4, 0); 
-
 	v.resize(8);    
-
 	std::cout << v.size() << std::endl; 
 }
