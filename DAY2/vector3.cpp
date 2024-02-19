@@ -31,5 +31,9 @@ int main()
 	delete[] score;
 	
 }
+
+
+
+
 // cl  vector3.cpp  
 // g++ vector3.cpp
