@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <numeric> // 합, 부분합, 내적등의 수학 관련된 표준 함수 제공.
 
 class Person
 {
@@ -59,9 +60,12 @@ void ex2()
 		v.push_back(n);
 	}
 
+/*
 	int total = 0;
-	for( auto e: v )
+	for( auto e : v )
 		total += e;
+*/
+	int total = std::accumulate(v.begin(), v.end(), 0);
 
 	std::cout << "total : " << total << std::endl;
 	std::cout << "average : " << total / v.size() << std::endl;
