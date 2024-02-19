@@ -13,11 +13,11 @@ struct Rect
 	int bottom;
 };
 
-int get_rect_area(Rect rc)
+int get_rect_area(const Rect& rc)
 {
 	return (rc.right - rc.left) * (rc.bottom - rc.top);
 }
-void draw_rect(Rect rc)
+void draw_rect(const Rect& rc)
 {
 	std::cout << "draw rect" << std::endl;
 }
@@ -25,6 +25,7 @@ int main()
 {
 //	int n1 = get_rect_area(1, 1, 10, 10);
 //	draw_rect(1, 1, 10, 10);
+
 	Rect rc = { 1, 1, 10, 10};
 	get_rect_area(rc);
 	draw_rect(rc);
