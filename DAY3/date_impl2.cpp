@@ -56,17 +56,18 @@ public:
 	}
 };
 
-
-
 int Date::days[12] = { 31, 28, 31, 30, 31, 30,  31, 31, 30, 31, 30, 31};
 
 
 
 int main()
 {
-	Date today(2024, 2, 20);
+//	Date today(2024, 2, 20);
+//	Date today(2024, 2, 28);
+	Date today(2023, 2, 28);
+//	Date today(2024, 2, 29);
 	today.print();
 
 	Date d = today.tomorrow();
-	d.print(); // 2024-2-21
+	d.print(); // 2024-2-29
 }
