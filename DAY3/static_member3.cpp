@@ -29,8 +29,8 @@ int main()
 
 	Car c1;
 	Car c2;
-
-//	cnt = -10; // 사용자가 실수 했다.
+	
+//	Car::cnt = -10; // public 에 있으면 이렇게 실수할수도 있습니다.
 
 	std::cout << Car::cnt << std::endl;	 // 2
 	
