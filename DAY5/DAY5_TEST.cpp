@@ -2,6 +2,25 @@
 #include <string>
 #include <iostream>
 
+class View 
+{
+public:
+	void set_color(int c) { std::cout << "changed color " << c << std::endl;}
+	virtual void show() {}
+};
+
+class Button : public View
+{
+public:
+	void show() { std::cout << "show Button" << std::endl; }
+};
+
+class TextBox : public View
+{
+public:
+	void show() { std::cout << "show TextBox" << std::endl; }	
+};
+
 int main()
 {
 	// 아래 코드가 에러가 발생하지 않도록 View, Button, TextBox 클래스를 설계해 주세요
