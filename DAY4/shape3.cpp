@@ -5,22 +5,25 @@
 // 핵심 3. 모든 도형의 공통의 기능은 반드시 기반 클래스인 Shape 에도 있어야 한다.
 //        그래야, Shape* 로 모든 도형을 묶어서 관리할때. 해당 기능을 사용할수 있다
 
+// 핵심 4. 기반 클래스가 가진 멤버 함수중에서 
+//		  파생 클래스가 override 하게 되는 것은 반드시 가상함수로 설계되어야한다
+
 class Shape 
 {
 public:
-	void draw() { std::cout << "draw shape" << std::endl;}
+	virtual void draw() { std::cout << "draw shape" << std::endl;}
 };
 
 class Rect : public Shape
 {
 public:
-	void draw() { std::cout << "draw rect" << std::endl;}
+	virtual void draw() { std::cout << "draw rect" << std::endl;}
 };
 
 class Circle : public Shape
 {
 public:
-	void draw() { std::cout << "draw circle" << std::endl;}
+	virtual void draw() { std::cout << "draw circle" << std::endl;}
 };
 
 int main()
