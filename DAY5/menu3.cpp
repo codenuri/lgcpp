@@ -14,6 +14,11 @@
 // 복습 하실때 일단 아래 2개 클래스를 먼저 완전히 이해 하고, 
 // 다음 단계를 보세요
 
+// 특히
+// MenuItem 도 command() 가 있고
+// PopupMenu 도 command() 가 있으니 잘 구별해 놓으세요
+
+
 class MenuItem
 {
 	std::string title;
