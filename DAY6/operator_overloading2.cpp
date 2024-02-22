@@ -27,6 +27,7 @@ int main()
 
 	Point p3 = p1 + p2; // 이순간 컴파일러는
 						// operator+(Point, Point) 함수 또는
-						// p1.operator+(Point)     멤버 함수를 찾게 됩니다.			
+						// p1.operator+(Point)     멤버 함수를 찾게 됩니다.	
+	p3.print(); // 3, 3		
 }
 
