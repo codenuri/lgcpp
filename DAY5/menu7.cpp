@@ -25,6 +25,13 @@ void add(int menuid)
 void show(int menuid) 
 {
 	// v에 있는 모든 고객 이름을 출력해보세요
+	for(auto e : v)
+	{
+		// e 가 무슨 타입인지 생각해 보세요 std::vector<People*> v 이므로
+		// e는 People*
+		std::cout << e->name << std::endl;
+	}
+
 }
 
 int main()
