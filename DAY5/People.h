@@ -1,10 +1,11 @@
-// People.h - menu7 번에서 People 만 복사해오세요
+// People.h 
 #include <string>
 
 class People
 {
 public:
 	std::string name;
-    
-	People(const std::string& name) : name{name} {}
+    int age;
+
+	People(const std::string& name, int age) : name{name}, age{age} {}
 };
