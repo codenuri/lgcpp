@@ -14,7 +14,14 @@ public:
 	virtual ~BaseMenu() {}
 
 	std::string get_title() const { return title;}
+
+
+	virtual void command() = 0;
 };
+
+
+
+
 
 class MenuItem : public BaseMenu
 {
@@ -65,6 +72,9 @@ public:
 				continue;
 
 			v[cmd-1]->command(); 
+				// vector<BaseMenu*> 이므로
+				// 이 코드가 실행되려면 반드시 BaseMenu 에도 command 가 있어야한다
+				// 모든 파생 클래스의 공통의 특징은 반드시 기반클래스에도 있어야한다
 		}
 	}
 };
