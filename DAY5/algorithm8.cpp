@@ -1,8 +1,7 @@
-// algorithm8.cpp
-// iterator6.cpp
 #include <vector>
 #include <string>
 #include <iostream>
+#include <algorithm>
 #include "People.h"
 
 std::vector<People*> v = { new People("kim", 20), 
@@ -19,16 +18,24 @@ int main()
 	//             따라서 find_if 로 해야 합니다.
 
 	auto ret = std::find_if( v.begin(), v.end(), 
-
 							[](People* p){ return p->name == "lee"; } );
 
 	if ( ret != v.end() )
 	{
-		std::cout << ret->name << "(" << ret->age << ")\n"; 
+		std::cout << (*ret)->name << "(" << (*ret)->age << ")\n"; 
+
+		// 모든 반복자는 ++은 됩니다.
+		auto ret2 = std::find_if( ++ret, v.end(), 
+							[](People* p){ return p->name == "lee"; } );
+
+		if ( ret2 != v.end() )
+		{
+			std::cout << (*ret2)->name << "(" << (*ret2)->age << ")\n"; 
+		}
 	}
 
 
-	// 2번째 사람도 찾아보세요
+
 
 }
 
