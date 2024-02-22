@@ -16,6 +16,7 @@ public:
 
 	std::string get_title() const { return title;}
 
+	// 메뉴 선택시 해야 할일은 아래 함수에서 작성.
 	void command()
 	{
 		std::cout << get_title() << "메뉴 선택됨\n";
