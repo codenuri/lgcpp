@@ -11,6 +11,10 @@ public:
 };
 int main()
 {
-	plus p;
-	int n = p(1,2); // 이 한줄을 잘 생각해 보세요
+	plus p;	// p는 함수가 아닌 객체 입니다. plus 타입의 객체
+
+	int n = p(1, 2); // 객체인  p를 마치 함수 처럼 사용합니다.
+					 // "함수객체(function object 또는 functor)"라고합니다.
+
+	int n1 = p.operator()(1, 2); // 로 해석됩니다. 					 
 }
