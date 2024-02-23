@@ -119,7 +119,7 @@ int current_year()
 
     std::chrono::system_clock::time_point now = std::chrono::system_clock::now();
     std::chrono::system_clock::duration tp = now.time_since_epoch();
-    year y = duration_cast<year>(tp);
+    year y = std::chrono::duration_cast<year>(tp);
 
 	return y.count() + 1970;
 }
